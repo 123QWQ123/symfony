@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="redmine@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13386</ObjectId>
+    </database>
+    <database id="3" parent="1" name="radar365">
+      <ObjectId>16385</ObjectId>
+    </database>
+    <database id="4" parent="1" name="deanoffice">
+      <ObjectId>69386</ObjectId>
+    </database>
+    <database id="5" parent="1" name="db_test">
+      <ObjectId>77578</ObjectId>
+    </database>
+    <database id="6" parent="1" name="redmine">
+      <ObjectId>77593</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="7" parent="6" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-05-13.18:50:12.819</IntrospectionTimestamp>
+      <IntrospectionStateNumber>23963323</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="6" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="9" parent="6" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="10" parent="6" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="11" parent="6" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="12" parent="6" name="information_schema">
+      <ObjectId>13098</ObjectId>
+    </schema>
+    <sequence id="13" parent="7" name="comment_id_seq">
+      <ObjectId>77599</ObjectId>
+      <StateNumber>23963323</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="14" parent="7" name="comment">
+      <ObjectId>77601</ObjectId>
+      <StateNumber>23963323</StateNumber>
+    </table>
+    <table id="15" parent="7" name="migration_versions">
+      <ObjectId>77594</ObjectId>
+      <StateNumber>23963204</StateNumber>
+    </table>
+    <column id="16" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>23963323</StateNumber>
+    </column>
+    <column id="17" parent="14" name="comment">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>23963323</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+    </column>
+    <column id="18" parent="14" name="issue_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>23963323</StateNumber>
+    </column>
+    <column id="19" parent="14" name="user_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>23963323</StateNumber>
+    </column>
+    <column id="20" parent="14" name="project_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>23963323</StateNumber>
+    </column>
+    <index id="21" parent="14" name="comment_pkey">
+      <ObjectId>77605</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="22" parent="14" name="comment_pkey">
+      <ObjectId>77606</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>comment_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="15" name="version">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>23963204</StateNumber>
+    </column>
+    <index id="24" parent="15" name="migration_versions_pkey">
+      <ObjectId>77597</ObjectId>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="25" parent="15" name="migration_versions_pkey">
+      <ObjectId>77598</ObjectId>
+      <ColNames>version</ColNames>
+      <UnderlyingIndexName>migration_versions_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
