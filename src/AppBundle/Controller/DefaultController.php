@@ -85,7 +85,7 @@ class DefaultController extends Controller
             $dateFormLogWork = $request->get('form_log_work');
 
             $redmineService->getClient()->time_entry->create([
-                'issue_id' => $id,
+                'project_id' => $id,
                 'spent_on' => $dateFormLogWork['date'],
                 'hours' => (float)$dateFormLogWork['hours'],
                 'comments' => $dateFormLogWork['comment']
